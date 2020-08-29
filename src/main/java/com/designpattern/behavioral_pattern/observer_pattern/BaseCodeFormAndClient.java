@@ -79,10 +79,9 @@ public class BaseCodeFormAndClient {
     }
 
     /**
-     * 具体观察者——可以通过
+     * 具体目标类——可以通过
      */
     class ConcreteObject extends AbstractObject {
-
 
         @Override
         void notifyAllObject(String name) {
@@ -113,7 +112,7 @@ public class BaseCodeFormAndClient {
     }
 
     /**
-     * 具体观察者A
+     * 具体观察者B
      */
     class ConcreteObserverB extends AbstractObserver {
 
@@ -148,6 +147,7 @@ public class BaseCodeFormAndClient {
         String outerName = PropertiesUtil.getValue("observer_pattern.outer.name");
         String innerName = PropertiesUtil.getValue("observer_pattern.inner.name");
 
+        //通过配置文件得到具目标类
         BaseCodeFormAndClient.AbstractObject o =(BaseCodeFormAndClient.AbstractObject)ReflectUtils.getInnerClass(outerName,innerName);
 
         //组建战队

@@ -21,15 +21,10 @@ public class BaseCodeForm {
      * 适配器
      */
     public class Adapter extends AdapteeA implements Target{
-        private AdapteeA adapteeA;
-
-        public Adapter(){
-            adapteeA = new BaseCodeForm().new AdapteeA();
-        }
 
         @Override
         public void getFirstSortWay() {
-            adapteeA.sort();
+            super.sort();
         }
 
     }

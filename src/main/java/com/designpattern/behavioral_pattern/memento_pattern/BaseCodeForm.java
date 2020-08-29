@@ -78,7 +78,7 @@ public class BaseCodeForm {
     }
 
     /**
-     * 对应的其中一个备忘录类——一个备忘录模式是和一个原发器模式相对应的
+     * 对应的其中一个备忘录类————一个备忘录模式是和一个原发器模式相对应的。其中属性字段需要一样(至少相对于原发器不能少)
      */
     public class ChessmanMementor {
         private String name;
